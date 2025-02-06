@@ -9,16 +9,24 @@
 /* Begin PBXBuildFile section */
 		4D6A62852D54B09C00D5FA40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A627F2D54B09C00D5FA40 /* Preview Assets.xcassets */; };
 		4D6A62862D54B09C00D5FA40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6A62812D54B09C00D5FA40 /* Assets.xcassets */; };
-		4D6A62872D54B09C00D5FA40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A62822D54B09C00D5FA40 /* ContentView.swift */; };
+		4D6A62872D54B09C00D5FA40 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A62822D54B09C00D5FA40 /* ListView.swift */; };
 		4D6A62882D54B09C00D5FA40 /* TodoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A62832D54B09C00D5FA40 /* TodoAppApp.swift */; };
+		4D6A628D2D54B98D00D5FA40 /* ListRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A628C2D54B98D00D5FA40 /* ListRowCell.swift */; };
+		4D6A628F2D54BE4500D5FA40 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A628E2D54BE4500D5FA40 /* AddView.swift */; };
+		4D6A62912D54CA5700D5FA40 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A62902D54CA3600D5FA40 /* ItemModel.swift */; };
+		4DD181672D552EA400574A78 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD181662D552E8800574A78 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D6A626E2D54B08F00D5FA40 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6A627F2D54B09C00D5FA40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D6A62812D54B09C00D5FA40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4D6A62822D54B09C00D5FA40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4D6A62822D54B09C00D5FA40 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		4D6A62832D54B09C00D5FA40 /* TodoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppApp.swift; sourceTree = "<group>"; };
+		4D6A628C2D54B98D00D5FA40 /* ListRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowCell.swift; sourceTree = "<group>"; };
+		4D6A628E2D54BE4500D5FA40 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		4D6A62902D54CA3600D5FA40 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		4DD181662D552E8800574A78 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,40 @@
 		4D6A62842D54B09C00D5FA40 /* TodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				4D6A62832D54B09C00D5FA40 /* TodoAppApp.swift */,
+				4D6A62922D54CAB500D5FA40 /* Model */,
+				4D6A62932D54CF1B00D5FA40 /* ViewModel */,
+				4D6A62892D54B7B900D5FA40 /* Views */,
 				4D6A62802D54B09C00D5FA40 /* Preview Content */,
 				4D6A62812D54B09C00D5FA40 /* Assets.xcassets */,
-				4D6A62822D54B09C00D5FA40 /* ContentView.swift */,
-				4D6A62832D54B09C00D5FA40 /* TodoAppApp.swift */,
 			);
 			path = TodoApp;
+			sourceTree = "<group>";
+		};
+		4D6A62892D54B7B900D5FA40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A62822D54B09C00D5FA40 /* ListView.swift */,
+				4D6A628C2D54B98D00D5FA40 /* ListRowCell.swift */,
+				4D6A628E2D54BE4500D5FA40 /* AddView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D6A62922D54CAB500D5FA40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D6A62902D54CA3600D5FA40 /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D6A62932D54CF1B00D5FA40 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DD181662D552E8800574A78 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D6A62872D54B09C00D5FA40 /* ContentView.swift in Sources */,
+				4D6A628F2D54BE4500D5FA40 /* AddView.swift in Sources */,
+				4D6A628D2D54B98D00D5FA40 /* ListRowCell.swift in Sources */,
+				4DD181672D552EA400574A78 /* ListViewModel.swift in Sources */,
+				4D6A62912D54CA5700D5FA40 /* ItemModel.swift in Sources */,
+				4D6A62872D54B09C00D5FA40 /* ListView.swift in Sources */,
 				4D6A62882D54B09C00D5FA40 /* TodoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +322,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +351,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
