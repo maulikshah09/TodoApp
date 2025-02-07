@@ -17,7 +17,9 @@ struct TodoAppApp: App {
             NavigationStack{
                 ListView()
                 
-            }.environmentObject(listViewModel)
+            }
+            .navigationViewStyle(.stack)
+            .environmentObject(listViewModel)
         }
     }
 }
