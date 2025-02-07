@@ -15,6 +15,7 @@
 		4D6A628F2D54BE4500D5FA40 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A628E2D54BE4500D5FA40 /* AddView.swift */; };
 		4D6A62912D54CA5700D5FA40 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A62902D54CA3600D5FA40 /* ItemModel.swift */; };
 		4DD181672D552EA400574A78 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD181662D552E8800574A78 /* ListViewModel.swift */; };
+		4DDBECAD2D55AF1F00CD6512 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDBECAC2D55AF1F00CD6512 /* NoItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		4D6A628E2D54BE4500D5FA40 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		4D6A62902D54CA3600D5FA40 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		4DD181662D552E8800574A78 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		4DDBECAC2D55AF1F00CD6512 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				4D6A62822D54B09C00D5FA40 /* ListView.swift */,
 				4D6A628C2D54B98D00D5FA40 /* ListRowCell.swift */,
 				4D6A628E2D54BE4500D5FA40 /* AddView.swift */,
+				4DDBECAC2D55AF1F00CD6512 /* NoItemsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				4DD181672D552EA400574A78 /* ListViewModel.swift in Sources */,
 				4D6A62912D54CA5700D5FA40 /* ItemModel.swift in Sources */,
 				4D6A62872D54B09C00D5FA40 /* ListView.swift in Sources */,
+				4DDBECAD2D55AF1F00CD6512 /* NoItemsView.swift in Sources */,
 				4D6A62882D54B09C00D5FA40 /* TodoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
